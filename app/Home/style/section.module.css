@@ -1,0 +1,93 @@
+.img {
+    width: 100%;
+}
+
+.img-parent {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    min-height: 300px;
+    padding-bottom: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+}
+
+.link {
+    text-decoration: none;
+    color: rgba(134, 134, 134, 0.377);
+}
+
+.g-list {
+    width: 22%;
+    min-width: 320px;
+    display: flex;
+    border: 1px solid black;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.desc {
+    /* width: 200px; */
+    color: grey;
+}
+
+.title {
+    font-size: 20px;
+    color: wheat;
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    border: none;
+    box-shadow: 0 0 3px 3px rgba(126, 126, 126, 0.301);
+}
+
+.btn:hover {
+    box-shadow: 0 0 3px 3px grey;
+}
+
+.link:hover {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .g-list {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .g-list {
+        width: 95%;
+    }
+}

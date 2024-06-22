@@ -1,0 +1,142 @@
+.circle {
+    position: fixed;
+    width: 100%;
+    top: 85%;
+    left: 92%;
+}
+
+.circle>img {
+    border-radius: 50%;
+}
+
+.information {
+    min-width: 20%;
+    position: inherit;
+    left: 79%;
+    height: 150px;
+    top: 60%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(131, 131, 131);
+    background: linear-gradient(90deg, rgba(131, 131, 131, 1) 0%, rgba(76, 76, 77, 1) 100%);
+    flex-direction: column;
+    /* display: none; */
+    transition: all 1s;
+    gap: 20px;
+    /* transform: scale(0); */
+    transform: translateX(500px);
+}
+
+.information.open {
+    /* transform: scaleX(1); */
+    transform: translateX(-1px);
+}
+
+.read {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    background: #505050;
+    background: linear-gradient(to right, #505050 0%, #444444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #505050;
+    background: linear-gradient(to right, #505050 0%, #444444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    flex-wrap: wrap;
+}
+
+.link {
+    text-decoration: none;
+    background: #FFC022;
+    background: linear-gradient(to right, #FFC022 0%, #CF7A2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .circle {
+        top: 85%;
+        left: 85%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .information.open {
+        top: 60%;
+        left: 75%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .information.open {
+        top: 60%;
+        left: 65%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .information.open {
+        top: 60%;
+        left: 65%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .circle {
+        top: 85%;
+        left: 80%;
+    }
+
+    .information.open {
+        top: 60%;
+        left: 47%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .circle {
+        top: 84%;
+        left: 70%;
+    }
+
+    .circle>img {
+        width: 100px;
+    }
+
+    .information.open {
+        top: 60%;
+        left: 35%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .circle>img {
+        width: 50px;
+    }
+
+    .circle {
+        top: 90%;
+        left: 85%;
+    }
+
+    .information.open {
+        top: 65%;
+        left: 28%;
+    }
+}

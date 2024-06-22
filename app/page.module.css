@@ -1,0 +1,7 @@
+.main {
+    width: 100%;
+    min-height: 1000px;
+    background: rgb(54, 52, 52);
+    padding-bottom: 20px;
+    background: linear-gradient(90deg, rgba(54, 52, 52, 1) 0%, rgba(90, 91, 90, 1) 100%);
+}

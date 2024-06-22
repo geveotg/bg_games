@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    display: flex;
+    min-height: 250px;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(131, 131, 131);
+    background: linear-gradient(90deg, rgba(131, 131, 131, 1) 0%, rgba(76, 76, 77, 1) 100%);
+}
+
+.link {
+    text-decoration: none;
+    background: #FFC022;
+    background: linear-gradient(to right, #FFC022 0%, #CF7A2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.read,
+.contact {
+    gap: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #6A6A6A;
+    background: linear-gradient(to right, #6A6A6A 0%, #A2A2A2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 400px) {
+    .link {
+        font-size: 15px;
+    }
+}
