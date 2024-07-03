@@ -24,7 +24,7 @@
 .link {
     text-decoration: none;
     background: #505050;
-    background: linear-gradient(to right, #505050 0%, #444444 100%);
+    background: linear-gradient(to right, #fbf9f9 0%, #fdfafa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

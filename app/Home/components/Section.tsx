@@ -18,22 +18,32 @@ const Section: FC = () => {
                 <div className={style["text"]}>
                     <div className={style["title"]}>{el.title}</div>
                     <div className={style["desc"]}>{el.desc}</div>
-                    <button
-                        onClick={() => {
-                            setClick(click + 1);
-                            if (click == 1) {
-                                setButton(true);
-                            } else if (click > 1) {
-                                setButton(false);
-                                setClick(click - 1);
-                            }
-                        }}
-                        className={style["btn"]}
-                    >
-                        <Link className={style["link"]} target={"_blank"} href={el.link}>
-                            Down-load a game
+                    {/* <button className={style["btn"]}> */}
+                    <div className={style["market_icons"]}>
+                        <Link
+                            className={`${style["download-button"]} ${style["android"]}`}
+                            target={"_blank"}
+                            href={el.link}
+                        >
+                            <img className={style["indroid_icon"]} src="/img/android.png" alt="" />
+                            <span>Download for Android</span>
                         </Link>
-                    </button>
+                        {el.Iphone_Link && (
+                            <Link
+                                className={`${style["download-button"]} ${style["ios"]}`}
+                                target={"_blank"}
+                                href={el.link}
+                            >
+                                <img
+                                    className={style["indroid_icon"]}
+                                    src="/img/appStore.png"
+                                    alt=""
+                                />
+                                <span>Download for iOS</span>
+                            </Link>
+                        )}
+                    </div>
+                    {/* </button> */}
                 </div>
             </div>
         );

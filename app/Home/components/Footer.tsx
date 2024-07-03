@@ -5,7 +5,7 @@ import style from "../style/footer.module.css";
 const Footer: FC = () => {
     return (
         <div className={style["footer"]}>
-            <div className={style["read"]}>
+            <div className={style["contact"]}>
                 <p> Read it!</p>
                 <Link className={style["link"]} href={"https://bugigames.com/privacy-policy"}>
                     Privacy Policy

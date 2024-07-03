@@ -12,19 +12,21 @@
 
 .link {
     text-decoration: none;
-    background: #FFC022;
-    background: linear-gradient(to right, #FFC022 0%, #CF7A2A 100%);
+    /* background: #FFC022;
+    background: linear-gradient(to right, #FFC022 0%, #CF7A2A 100%); */
+    color: white !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .read,
 .contact {
-    gap: 20px;
+    gap: 18px;
     font-weight: bold;
     font-size: 20px;
-    background: #6A6A6A;
-    background: linear-gradient(to right, #6A6A6A 0%, #A2A2A2 100%);
+    background: #6a6a6a;
+    color: white;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
@@ -33,7 +35,9 @@
     align-items: center;
     flex-direction: column;
 }
-
+.contact p {
+    font-size: 24px;
+}
 @media screen and (max-width: 400px) {
     .link {
         font-size: 15px;
